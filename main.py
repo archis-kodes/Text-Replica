@@ -19,6 +19,12 @@ from pydantic import BaseModel
 
 from app.agents.style_graph import run_style_transfer
 
+from dotenv import load_dotenv
+load_dotenv()
+
+import os
+import tempfile
+
 #  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< APP INIT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 app = FastAPI(
